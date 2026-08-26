@@ -205,32 +205,5 @@ cd server
 npm test
 
 
-## MongoDB Schema
-
-### User
-javascript
-{
-  name: String (required, min 2 chars),
-  email: String (required, unique, lowercase),
-  password: String (required, hashed, min 6 chars),
-  createdAt: Date,
-  updatedAt: Date
-}
-
-
-### Task
-javascript
-{
-  title: String (required, max 100 chars),
-  description: String (max 500 chars),
-  dueDate: Date,
-  priority: "Low" | "Medium" | "High" (default: "Medium"),
-  status: "To Do" | "In Progress" | "Done" (default: "To Do"),
-  tags: [String],
-  userId: ObjectId (ref: User),
-  createdAt: Date,
-  updatedAt: Date
-}
-\`\`\`
 
 
