@@ -1,6 +1,6 @@
 # TaskTracker - Full-Stack Task Management App
 
-A modern, full-stack task management application built with Next.js 14, TypeScript, Tailwind CSS, and MongoDB, with an optional Express.js backend.
+A modern, full-stack task management application built with Next.js 14, TypeScript, Tailwind CSS, and MongoDB & Express.js backend.
 
 ## Features
 
