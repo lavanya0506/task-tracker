@@ -43,7 +43,7 @@ A modern, full-stack task management application built with Next.js 14, TypeScri
 
 ## Project Structure
 
-\`\`\`
+
 ├── app/
 │   ├── api/
 │   │   ├── auth/
@@ -100,26 +100,26 @@ A modern, full-stack task management application built with Next.js 14, TypeScri
 │       ├── auth.test.js
 │       └── tasks.test.js
 └── README.md
-\`\`\`
+
 
 ## Environment Variables
 
 Add these in the **Vars** section of the v0 sidebar:
 
-\`\`\`env
+env
 MONGODB_URI=mongodb+srv://<username>:<password>@<cluster>.mongodb.net/?retryWrites=true&w=majority
 JWT_SECRET=your-super-secret-jwt-key-change-this-in-production
-\`\`\`
+
 
 For Express.js backend (.env file):
 
-\`\`\`env
+env
 MONGODB_URI=mongodb+srv://<username>:<password>@<cluster>.mongodb.net/?retryWrites=true&w=majority
 JWT_SECRET=your-super-secret-jwt-key-change-this-in-production
 PORT=5000
 FRONTEND_URL=http://localhost:3000
 NODE_ENV=development
-\`\`\`
+
 
 ## API Endpoints
 
@@ -177,16 +177,16 @@ NODE_ENV=development
 ## Local Development
 
 ### Frontend (Next.js)
-\`\`\`bash
+bash
 # Install dependencies
 npm install
 
 # Run development server
 npm run dev
-\`\`\`
+
 
 ### Backend (Express.js)
-\`\`\`bash
+bash
 # Navigate to server directory
 cd server
 
@@ -195,20 +195,20 @@ npm install
 
 # Run development server
 npm run dev
-\`\`\`
+
 
 ## Testing
 
 ### Express.js Backend Tests
-\`\`\`bash
+bash
 cd server
 npm test
-\`\`\`
+
 
 ## MongoDB Schema
 
 ### User
-\`\`\`javascript
+javascript
 {
   name: String (required, min 2 chars),
   email: String (required, unique, lowercase),
@@ -216,10 +216,10 @@ npm test
   createdAt: Date,
   updatedAt: Date
 }
-\`\`\`
+
 
 ### Task
-\`\`\`javascript
+javascript
 {
   title: String (required, max 100 chars),
   description: String (max 500 chars),
